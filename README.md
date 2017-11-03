@@ -2,15 +2,25 @@
 利用Avisynth合成影片，並且使用TransAll的轉場特效，最後ffmpeg使用進行編碼
 
 ## Environment And Tools
+
 作業系統:Windows
+
 FFmpeg:ffmpeg-3.4-win32-static(注意:一定要win32版，TransAll只有x86版本)
+
   下載 https://www.ffmpeg.org/download.html#build-windows
+  
 Avisynth:AviSynth_260(AviSynth.dll、DevIL.dll)，可以編輯影片的工具
+
   下載 https://sourceforge.net/projects/avisynth2/
+  
 FFMS2:ffms2-2.23.1-msvc(x86:ffms2.dll、FFMS2.avsi)，可以讓avisynth載入mp4檔
+
   下載 https://github.com/FFMS/ffms2/releases
+  
 TransAll:TransAll.dll，Avisynth的一個插件，可以讓影片產生轉場特效
+
   參考 http://www.avisynth.nl/users/vcmohan/TransAll/docs/index.html
+  
   無載點，網路上說TransAll.dll存在AviSynth+，但是，沒有任何發現，所以google隨便下載
   
 PS:只要有ffmpeg.exe、AviSynth.dll、DevIL.dll、ffms2.dll、FFMS2.avsi、TransAll.dll以上檔案，便可以直接移植到其他地方執行
