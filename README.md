@@ -1,0 +1,2 @@
+# TransitionEffect
+利用Avisynth合成影片，並且使用TransAll的轉場特效，最後ffmpeg使用進行編碼
