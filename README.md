@@ -31,16 +31,12 @@ PS:只要有ffmpeg.exe、AviSynth.dll、DevIL.dll、ffms2.dll、FFMS2.avsi、Tra
 
 影片來源H264、解析度需一致，音頻來源PCM，先用ffmpeg轉AAC且統一SampleRate:44100、Channel:1、Bitrate:128k
 
-ffmpeg -y -i vdo1.mp4 -c:v copy -c:a aac -strict experimental -ar 44100 -ac 1 -ab 128k aac_vdo1.mp4
+ffmpeg -y -i vdo1.mp4 -c:v copy -c:a aac -ar 44100 -ac 1 -ab 128k aac_vdo1.mp4
 
-ffmpeg -y -i vdo2.mp4 -c:v copy -c:a aac -strict experimental -ar 44100 -ac 1 -ab 128k aac_vdo2.mp4
+ffmpeg -y -i vdo2.mp4 -c:v copy -c:a aac -ar 44100 -ac 1 -ab 128k aac_vdo2.mp4
 
 
-用ffmpeg影片長度切割至整數(最小單位:秒)，不切割影片Avisynth無法讀取檔案(?)
-
-ffmpeg -i aac_vdo1.mp4 -ss 00:00:00 -to hh:mm:ss -c copy c_aac_vdo1.mp4
-
-ffmpeg -i aac_vdo2.mp4 -ss 00:00:00 -to hh:mm:ss -c copy c_aac_vdo2.mp4
+PS: 勿用-strict experimental avisynth會讀取不了mp4檔
 
 
 ## Avisynth Script
