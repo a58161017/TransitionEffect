@@ -78,4 +78,4 @@ Left+Audiodub(t_video, t_audio)+Right                             
 
 ## Encode Script
 
-ffmpeg -y -i script.avs -c:v libx264 -c:a aac -strict experimental -ar 44100 -ac 1 -ab 128k output.mp4
+ffmpeg -y -i script.avs -c:v libx264 -c:a aac -ar 44100 -ac 1 -ab 128k output.mp4
